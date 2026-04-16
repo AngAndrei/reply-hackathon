@@ -41,7 +41,7 @@ the challenge instructions.
 The fraud graph is hierarchical and bounded:
 
 1. `dispatcher` inspects the current transaction and dataset overview, then selects useful specialists.
-2. Specialist agents run in parallel and use dataset tools to inspect raw evidence.
+2. `specialist agents` run in parallel and use dataset tools to inspect raw evidence.
 3. `judge` reads all findings and returns `fraud` or `valid` with a confidence score.
 4. `detective` only activates when judge confidence is between 40 and 60 inclusive.
 
