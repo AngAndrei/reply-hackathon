@@ -1,0 +1,37 @@
+[project]
+name = "reply-challenge"
+version = "0.1.0"
+description = "Reply Challenge AI agents with Langfuse resource tracking"
+readme = "README.md"
+requires-python = ">=3.13,<3.14"
+authors = [
+    {name = "Ovidiu Stefan Andreescu", email = "ovidiu.andreescu1212@gmail.com"},
+    {name = "Andrei Anghelea", email = "andreianghelea@gmail.com"},
+]
+
+dependencies = [
+    "langchain>=1.0.0,<2.0.0",
+    "langchain-ollama>=0.3.0,<1.0.0",
+    "langchain-mcp-adapters>=0.2.2",
+    "langchain-openai>=1.0.0,<2.0.0",
+    "langfuse>=3.0.0,<4.0.0",
+    "mcp>=1.27.0",
+    "pandas>=3.0.2",
+    "pydantic-settings>=2.0.0,<3.0.0",
+    "python-dotenv>=1.0.0,<2.0.0",
+    "ulid-py>=1.1.0,<2.0.0",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=8.0.0",
+    "ruff>=0.3.0",
+]
+
+
+[tool.uv]
+package = false
+
+[tool.ruff]
+line-length = 100
+src = ["src"]
